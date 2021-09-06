@@ -14,4 +14,4 @@ words.sort()
 longest_word = max((len(word) for word in words))
 
 for word in words:
-    print("{} : {:<{}}".format(word, words_to_count[word], longest_word))
+    print("{:{}} : {}".format(word, longest_word, words_to_count[word]))
