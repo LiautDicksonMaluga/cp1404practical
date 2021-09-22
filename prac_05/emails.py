@@ -4,8 +4,8 @@ def main():
     while email != "":
         name = get_name_from_email(email)
         confirmation = input("Is your name {}? (Y/n ".format(name))
-        if confirmation.upper() != "Y" and confirmation != "":
-            name = input("Name")
+        if confirmation.upper() == "N":
+            name = input("Name: ")
         email_to_name[email] = name
         email = input("Email: ")
 
